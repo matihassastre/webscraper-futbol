@@ -19,3 +19,18 @@ Scraper de datos reales de la Primera División Uruguaya desde FBref.
 
 ```bash
 python -m webscraper_futbol
+
+## 📦 Descarga
+
+[⬇️ Descargar última release](https://github.com/matihassastre/webscraper-futbol/releases/latest)
+![Release](https://img.shields.io/github/v/release/matihassastre/webscraper-futbol?label=release)
+![Downloads](https://img.shields.io/github/downloads/matihassastre/webscraper-futbol/total?label=descargas)
+
+## 🧪 Instalación desde Release (Windows)
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+pip install -e .
+python -m webscraper_futbol
