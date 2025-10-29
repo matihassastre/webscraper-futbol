@@ -1,4 +1,4 @@
-﻿from setuptools import setup, find_packages
+from setuptools import setup, find_packages
 
 setup(
     name="webscraper_futbol",
@@ -16,13 +16,4 @@ setup(
         ]
     },
     python_requires=">=3.8",
-),
-    package_dir={"": "src"},
-    install_requires=[
-        "requests",
-        "beautifulsoup4",
-        "html5lib",
-    ],
-    python_requires=">=3.8",
 )
-
