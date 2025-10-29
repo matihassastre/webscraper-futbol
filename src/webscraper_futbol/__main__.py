@@ -1,24 +1,17 @@
-﻿import argparse
-import csv
+﻿import csv
 from .scrapers.fbref_scraper import get_table, extract_standings
-from .config import standings_url
+
+URL = "https://fbref.com/en/comps/45/table/Primera-Division-Uruguay-Stats"
 
 def main():
-    parser = argparse.ArgumentParser(prog="webscraper-futbol")
-    parser.add_argument("--season", type=int, default=2025)
-    args = parser.parse_args()
-
-    url = standings_url(args.season)
-    soup = get_table(url)
+    soup = get_table(URL)
     rows = extract_standings(soup)
 
-    # guardamos CSV
-    out = f"data/standings_{args.season}.csv"
+    out = "data/standings_uruguay.csv"
     with open(out, "w", newline="", encoding="utf-8") as f:
         csv.writer(f).writerows(rows)
 
     print(f"✅ Filas: {len(rows)} guardado en {out}")
-    print("🔹 Muestra:")
     for r in rows[:5]:
         print(r)
 
