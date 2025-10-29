@@ -4,3 +4,5 @@ __pycache__/
 *.cache
 data/
 data_uruguay/
+
+/src/*.egg-info/
