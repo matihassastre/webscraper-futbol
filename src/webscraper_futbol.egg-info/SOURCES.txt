@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/webscraper_futbol/__init__.py
+src/webscraper_futbol/config.py
+src/webscraper_futbol.egg-info/PKG-INFO
+src/webscraper_futbol.egg-info/SOURCES.txt
+src/webscraper_futbol.egg-info/dependency_links.txt
+src/webscraper_futbol.egg-info/requires.txt
+src/webscraper_futbol.egg-info/top_level.txt
+src/webscraper_futbol/scrapers/__init__.py
+src/webscraper_futbol/scrapers/fbref_scraper.py
+src/webscraper_futbol/utils/__init__.py
+src/webscraper_futbol/utils/http_client.py
