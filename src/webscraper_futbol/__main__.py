@@ -9,7 +9,7 @@ def main():
     soup = get_table(URL)
     rows = extract_standings(soup)
 
-    # Crear carpeta data si no existe ✅
+    # ✅ Crear carpeta data si no existe
     os.makedirs("data", exist_ok=True)
 
     out = "data/standings_uruguay.csv"
